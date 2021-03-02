@@ -167,7 +167,7 @@ class GraphQLFactory {
 
     @Singleton
     GraphQL graphQL(GraphQLSchema schema) {
-        new GraphQL(schema)
+        GraphQL.newGraphQL(schema).build()
     }
 
 }
